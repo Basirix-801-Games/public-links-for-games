@@ -103,8 +103,10 @@
 .copy-container {
   display: inline-flex;
   align-items: center;
-  gap: 6px;
+  gap: 3px;
+  vertical-align: middle;
 }
+
 
 .copy-btn {
   background: none;
@@ -382,7 +384,7 @@ function copyEmail(button, text) {
     button.classList.add('copied');
     setTimeout(function() {
       button.classList.remove('copied');
-    }, 1500);
+    }, 1000);
   });
 }
 </script>
